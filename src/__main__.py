@@ -7,7 +7,7 @@
 import flask
 
 # Initialize app context
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, template_folder='./templates/')
 
 @app.route('/')
 def index():
